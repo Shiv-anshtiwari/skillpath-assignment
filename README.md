@@ -94,6 +94,17 @@ Measuring in JS needs no containment, so it cannot collapse.
 Both are render-time only — neither is in the effect's dependency array, so
 changing one never refetches.
 
+## AI usage
+
+Built with Claude Code (Claude Opus). The full conversation is in
+[`docs/TRANSCRIPT.md`](docs/TRANSCRIPT.md) — 58 turns, unedited on both sides.
+
+The Claude Code CLI has no native "share conversation" link the way the Claude
+and ChatGPT web apps do, so the session was exported from its local transcript
+and committed here instead. Tool calls are collapsed to one-line summaries to
+keep it readable; local filesystem paths are shortened; nothing said on either
+side has been altered.
+
 ## Repository layout
 
 | Path | |
@@ -102,3 +113,4 @@ changing one never refetches.
 | `tests/` | Test suite and the live API check |
 | `PLAN.md` | Step-by-step build plan, decisions and their revisions |
 | `LEARNINGS.md` | Concepts, trade-offs and the reasoning behind each decision |
+| `docs/TRANSCRIPT.md` | The full Claude Code conversation behind the build |

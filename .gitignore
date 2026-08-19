@@ -6,3 +6,6 @@ Thumbs.db
 # The assignment brief is the company's own document, not part of what I built.
 # Excluded from the public repo by default. Delete this line to publish it.
 Assignment.pdf
+
+# My submission document - goes to the form, not to a public repo.
+Skillpath_Submission.docx

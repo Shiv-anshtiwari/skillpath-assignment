@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# The assignment brief is the company's own document, not part of what I built.
+# Excluded from the public repo by default. Delete this line to publish it.
+Assignment.pdf

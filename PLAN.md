@@ -16,6 +16,23 @@ Then, at every checkpoint:
 
 ---
 
+## Status
+
+| Step | State |
+|---|---|
+| 1 Container-query spike | closed (technique later superseded) |
+| 2 Pure helpers | closed |
+| 3 Fetch + state machine | closed |
+| 4 CourseCard + grid | closed |
+| 5 States and recovery UI | closed |
+| 6 Property controls | closed |
+| 7 Hero + footer + visual pass | closed |
+| 8 Adversarial testing | closed |
+| 9 The 200-word note | **outstanding - written by me, not the assistant** |
+
+Tests: 39 + 13 assertions, both suites green.
+Code: https://github.com/Shiv-anshtiwari/skillpath-assignment
+
 ## Locked decisions
 
 | Decision | Choice | One-line defence |
@@ -360,7 +377,7 @@ Preview page is not.
 
 **Tests: 39 passed, exit code 0.**
 
-## Step 7 — Hero + footer
+## Step 7 — Hero + footer  (CLOSED)
 
 Built as Framer-native layers, not code components. Only the courses section is
 required to be code, and using the tool where the tool fits reads better than
@@ -382,10 +399,10 @@ Shared measure: **max-width 1200, side padding 24** in all three sections.
 
 ### Page
 
-- [ ] Page background #F8FAFC
-- [ ] Page-level font set (Outfit / Work Sans) so the code component's
+- [x] Page background #F8FAFC
+- [x] Page-level font set (Outfit / Work Sans) so the code component's
       `font-family: inherit` resolves to the same system
-- [ ] Courses component instance set to **Fill** width
+- [x] Courses component instance set to **Fill** width
 
 ### Hero  (centred)
 
@@ -456,17 +473,17 @@ Footer                  Frame - Fill x Fit - fill #F8FAFC - border-top 1px #E2E8
 
 ### Responsive (phone breakpoint only)
 
-- [ ] Hero padding 120 -> 72, headline 60 -> 40
-- [ ] Footer content stack -> vertical, gap 16, align left
-- [ ] Everything else identical: 1200 measure, 24 side padding, palette
+- [x] Hero padding 120 -> 72, headline 60 -> 40
+- [x] Footer content stack -> vertical, gap 16, align left
+- [x] Everything else identical: 1200 measure, 24 side padding, palette
 
 ### Checks
 
-- [ ] Hero, courses and footer share the same left/right content edges
-- [ ] No seam between sections (all three on #F8FAFC)
-- [ ] `font-family: inherit` resolves to Work Sans, NOT a serif fallback
-- [ ] CTA and footer links have hover states
-- [ ] Full page scrolls cleanly at desktop and at 375px
+- [x] Hero, courses and footer share the same left/right content edges
+- [x] No seam between sections (all three on #F8FAFC)
+- [x] `font-family: inherit` resolves to Work Sans, NOT a serif fallback
+- [x] CTA and footer links have hover states
+- [x] Full page scrolls cleanly at desktop and at 375px
 
 ## Step 8 — Adversarial testing  (CLOSED)
 
@@ -516,7 +533,10 @@ resize sweep, repeated hard reloads against the real flaky API, both currencies
 against live `IN` and `US` responses, the cold-start load, and the published
 Framer link opening in a fresh browser.
 
-## Step 9 — The 200-word note
+## Step 9 — The 200-word note  (OUTSTANDING)
+
+Written by me. The boxes below are the checklist for it, not claims that it is
+done. Source material is in LEARNINGS.md.
 
 - [ ] Names the retry-on-404 decision and why it is normally wrong
 - [ ] Names the INR default and the asymmetry behind it

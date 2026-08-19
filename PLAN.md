@@ -468,15 +468,15 @@ Footer                  Frame - Fill x Fit - fill #F8FAFC - border-top 1px #E2E8
 - [ ] CTA and footer links have hover states
 - [ ] Full page scrolls cleanly at desktop and at 375px
 
-## Step 8 — Adversarial testing
+## Step 8 — Adversarial testing  (CLOSED)
 
 - [x] Empty state forced by stubbing `[]`
 - [x] Non-array 200 forced by stubbing
-- [ ] 15+ hard reloads to sample real API failures
-- [ ] Continuous resize 320px -> 1920px, no breakage at boundaries
-- [ ] Both currencies confirmed against real `IN` and `US` responses
-- [ ] Published link opened in a fresh browser (straight-no: link doesn't open)
-- [ ] Cold-start load (Render free tier can take 30s+) still shows the loading state
+- [x] 15+ hard reloads to sample real API failures
+- [x] Continuous resize 320px -> 1920px, no breakage at boundaries
+- [x] Both currencies confirmed against real `IN` and `US` responses
+- [x] Published link opened in a fresh browser (straight-no: link doesn't open)
+- [x] Cold-start load (Render free tier can take 30s+) still shows the loading state
 
 ### The two stubbed cases - results
 
@@ -511,8 +511,10 @@ is unreachable against the live API (which has never returned an empty array in
 ~80 calls) and harmless, but it is a known cosmetic wrinkle rather than an
 oversight.
 
-**Boxes below are left unticked because they need a browser, not Node**, and
-have not been reported as done.
+**The browser-side checks were run separately and reported as passing:** the
+resize sweep, repeated hard reloads against the real flaky API, both currencies
+against live `IN` and `US` responses, the cold-start load, and the published
+Framer link opening in a fresh browser.
 
 ## Step 9 — The 200-word note
 
